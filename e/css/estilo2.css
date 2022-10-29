@@ -1,0 +1,309 @@
+/* Configuraciónes Globales*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clearfix{
+    zoom: 1;
+}
+.clearfix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+section{             /* con esta funciom creo una divi. entre seciones */
+    padding: 88px 0; /* con esta funciom creo una divi. entre seciones */ 
+}                    /* con esta funciom creo una divi. entre seciones */    
+
+html{
+    background-color: #fff;
+    color: rgb(62,62,62);/*se le pone color a la letras*/
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 200;/* grosor de la letra del texcto*/
+    font-size: 20px;
+    text-rendering: optimizeLegibility;/* opta por la calidad antes que la valicidad */
+
+}
+
+/* Emcabezados  EEE */
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+h2::after{
+    display: block;
+    height: 2px;
+    background-color: green;
+    content: ""; /* con esta etiqueta se genera una linea que divide las secciones */
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* Nav */
+/* home-conteiner */
+
+header {
+    background-image: linear-gradient( rgba(0,0,0,0.705), rgba(0,0,0,0.705)), url(/assets/images/titulo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+.logo{
+    height: 180px;
+    width: auto;
+    float: left;
+    margin-left: 70px;
+    margin-top: 50px;
+    
+}
+/* Nav */
+.nav{
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+    margin-right: -180px;
+    
+    
+    
+    
+    
+}
+.nav li{
+    display: inline-block;
+    margin-left: 40px;
+    
+    
+}
+
+.nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 90%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    transition: border-bootom 0.1s;
+    
+   
+   
+}
+.nav li a:hover{
+   
+    border-bottom: 3px solid green ;
+}
+
+/* linea de botones  */
+.home-conteiner{
+    display: inline-block;
+    margin-left: 30%;
+    margin-top: 100px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    transform: translate(-50,50);
+    
+}
+/*botones " btn btn "*/
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 200px ;
+    border: 2px solid green;
+    margin-top: 50px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    transition: color 0.2s;
+}
+/* botones Contact - Ver mas*/
+.btn-contac,
+.btn-more{
+    margin-left: 110px;
+}
+.btn-contac:hover,
+.btn-more:hover{
+    background-color: green;
+}
+/* btn Comprar y Cokmprar x cantidad */
+.btn-comprar,
+.btn-xCantidad,
+input[type=submit]{
+    background-color: green;
+    margin-top: 10px;
+}
+.btn-comprar:hover,
+.btn-xCantidad:hover
+{
+    color: green;
+    background-color: black;
+}
+/* boton input ENVIAR*/
+input[type=submit]{
+    border-radius: 200px;
+    border: 2px solid;
+}
+input[type=submit]:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/* section Description*/
+
+.texto-center{         /* con esta etiqueta    */    
+    line-height: 145%; /* se acomoda el        */ 
+    width: 70%;        /* el texoto de referencia   */     
+    margin-left: 15% ; /* ES una SEUDO CLASE     */  
+    
+}
+/* Seccion Plantas */
+.semillas{
+    background-color: #f4f4f4;
+}
+.tipos-De-semillas{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 20%;
+    box-shadow: 0 2px 2px #efefef; /* Se hace una sobra con el color del Background */
+    text-align: center;
+}
+.tipos-De-semillas div{                /* con border-bootm hago una linea entre todas las Div usadas */
+    padding: 15px;                     /* con border-bootm hago una linea entre todas las Div usadas */     
+    border-bottom: 1px solid #e8e8e8;/* con border-bootm hago una linea entre todas las Div usadas */ 
+}
+/* Precio Semillas */
+.precio-semilla{
+    font-size: 90px;
+    margin-bottom: 10px;
+    font-weight: 60;
+    color: green;
+}
+.socio{
+    color: green;
+}
+/* Informacion Sobre las semillas */
+.tipos-De-semillas div ul li{
+    list-style: none;
+
+}
+/* fotos de imagen de planta sativa & indica */
+.imag-planta{
+    background-color: #e8e8e8;
+}
+.sativa-indica{
+    margin-left: 350px;
+}
+/* Formas de consumo alternativo de la marihuana */
+/* seccion de imagenes */
+.formasDeConsumo{
+    margin-bottom: 350px;
+}
+.projetc-image{
+    display:block;
+    float: left;
+    width: 100%;
+    
+    
+} 
+.photo{
+    width: 200px;
+    margin-left: 45%;
+    overflow: hidden;
+    background-color: black;
+}
+.photo img{
+    opacity: 0.3;
+    width: 200px;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s , opacity 0.5s;
+}
+.photo img:hover{
+    opacity: 1;
+}
+/* Section de fomrulario de contacto */
+.contac-form{
+    margin: 0 auto;
+    width: 20%;
+}
+input, /* aca le doy un formato general a todo el codigo  */
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid green;
+}
+textarea{
+    height: 100%;
+    width: 250px;
+}
+input[type=text], /* hago un formato especializado en cada div */
+input[typw=email]{
+    width: 250px;
+}
+
+input[type=chckbox]{/* Creo que es para el cuadro si ACEPTAS recibir notificaciones*/
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{
+    outline: none;
+}
+/* Footer Pie de pagina  */
+footer{
+    background-color: rgb(31,29, 29);
+    padding: 30px;
+    font-size: 80%;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+.footer-nav li,
+.footer-nav li a{
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: 0.2s;
+    opacity: 0.6;
+}
+.footer-nav li:hover,
+.footer-nav li a:hover{
+    color: white;
+   opacity: 1;
+}
+footer p{
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
